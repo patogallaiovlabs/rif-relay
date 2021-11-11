@@ -61,12 +61,23 @@ contract('RelayServerRequestsProfiling', function (accounts) {
 
     it('should make X requests per block callback when state must be refreshed', async function () {
         await evmMineMany(5);
+        console.log('**************** TEST');
+        console.log('**************** provider log 1');
+        console.log(provider.log());
         const latestBlock = await web3.eth.getBlock('latest');
         assert.isTrue(relayServer._shouldRefreshState(latestBlock.number));
-        const receipts = await relayServer._worker(latestBlock.number);
+        console.log('**************** provider log 2');
+        console.log(provider.log());
+        const receipts = await relayServer._worker2(
+            latestBlock.number,
+            provider
+        );
         assert.equal(receipts.length, 0);
         provider.log();
+        console.log('**************** provider log X');
+        console.log(provider.log());
         assert.equal(provider.requestsCount, callsPerStateRefresh);
+        assert.fail();
     });
 
     it('should make X requests per block callback when nothing needs to be done', async function () {
