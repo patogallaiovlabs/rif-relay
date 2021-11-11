@@ -152,35 +152,35 @@ TEST_SUITE_1="${TEST_SUITE_BATCH} \
 TEST_SUITE_2="${TEST_SUITE_SEQUENTIAL} \
   RelaySelectionManager|RelayServerRequestsProfiling|ServerConfigParams|TransactionManager|KnownRelaysManager|SmartWallet|SampleRecipient|StakeManagement|RSKAddressValidator|EnvelopingUtils|SmartWalletDiscovery|CustomSmartWallet \
   test/relayclient/RelaySelectionManager.test.ts \
-  test/relayserver/RelayServerRequestsProfiling.test.ts \
-  test/relayserver/ServerConfigParams.test.ts \
-  test/relayserver/TransactionManager.test.ts \
-  test/relayclient/KnownRelaysManager.test.ts \
-  test/smartwallet/SmartWallet.test.ts \
-  test/SampleRecipient.test.ts \
-  test/StakeManagement.test.ts \
-  test/RSKAddressValidator.test.ts \
-  test/EnvelopingUtils.test.ts \
-  test/relayclient/SmartWalletDiscovery.test.ts \
-  test/smartwallet/CustomSmartWallet.test.ts"
+  test/relayserver/RelayServerRequestsProfiling.test.ts 
+#   test/relayserver/ServerConfigParams.test.ts \
+#   test/relayserver/TransactionManager.test.ts \
+#   test/relayclient/KnownRelaysManager.test.ts \
+#   test/smartwallet/SmartWallet.test.ts \
+#   test/SampleRecipient.test.ts \
+#   test/StakeManagement.test.ts \
+#   test/RSKAddressValidator.test.ts \
+#   test/EnvelopingUtils.test.ts \
+#   test/relayclient/SmartWalletDiscovery.test.ts \
+#   test/smartwallet/CustomSmartWallet.test.ts"
 
-TEST_SUITE_3="${TEST_SUITE_BATCH} \
-  Test_Group_3 \
-  test/Flows.test.ts \
-  test/TestEnvironment.test.ts \
-  test/HttpWrapper.test.ts \
-  test/KeyManager.test.ts \
-  test/WalletFactory.test.ts"
+# TEST_SUITE_3="${TEST_SUITE_BATCH} \
+#   Test_Group_3 \
+#   test/Flows.test.ts \
+#   test/TestEnvironment.test.ts \
+#   test/HttpWrapper.test.ts \
+#   test/KeyManager.test.ts \
+#   test/WalletFactory.test.ts"
 
-TEST_SUITE_4="${TEST_SUITE_BATCH} \
-  Test_Group_4 \
-  test/relayclient/RelayClient.test.ts \
-  test/relayserver/NetworkSimulation.test.ts \
-  test/relayserver/RegistrationManager.test.ts \
-  test/relayserver/RelayServer.test.ts"
+# TEST_SUITE_4="${TEST_SUITE_BATCH} \
+#   Test_Group_4 \
+#   test/relayclient/RelayClient.test.ts \
+#   test/relayserver/NetworkSimulation.test.ts \
+#   test/relayserver/RegistrationManager.test.ts \
+#   test/relayserver/RelayServer.test.ts"
 
-TEST_SUITE_5="${TEST_SUITE_SEQUENTIAL} \
-  RelayHub|VersionRegistry|RelayProvider|RelaySelectionManager \
-  test/RelayHub.test.ts
-  test/VersionRegistry.test.ts
-  test/relayclient/RelayProvider.test.ts"
+# TEST_SUITE_5="${TEST_SUITE_SEQUENTIAL} \
+#   RelayHub|VersionRegistry|RelayProvider|RelaySelectionManager \
+#   test/RelayHub.test.ts
+#   test/VersionRegistry.test.ts
+#   test/relayclient/RelayProvider.test.ts"
